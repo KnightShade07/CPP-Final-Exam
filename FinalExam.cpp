@@ -101,7 +101,7 @@ void displayDeck(array<const string*, DECK_SIZE> deck) {
 
 */
 void shuffleDeck(array<const string*, DECK_SIZE>* deck) {
-	cout << "The deck has been shuffled! Here is what it looks like!:" << endl;
+	cout << "The deck has been shuffled! To see your new shuffled deck, press 2 and then enter!:" << endl;
 	static default_random_engine randEngine (static_cast<unsigned int>(time(0)));
 	for (unsigned int i = DECK_SIZE - 1; i > 0; i--)
 	{
