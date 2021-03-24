@@ -73,7 +73,7 @@ void printMenu() {
 //Get this working first.
 void displayDeck(array<const string*, DECK_SIZE> deck) {
 	cout << "Here is your deck of cards! Pick a card, any card! Just kidding!" << endl <<
-	"This is a programming exam, not a magic show!" << endl;
+	"This is a programming exam, not a magic show!" << endl << endl;
 
 	for (int i = 0; i < DECK_SIZE; i++)
 	{
@@ -88,6 +88,10 @@ void displayDeck(array<const string*, DECK_SIZE> deck) {
 		}
 		
 	}
+
+	//This fixes the issue of 0 - Quit being on the same line
+	//as the last set of cards in the deck.
+	cout << endl << endl;
 	
 }
 //This method will shuffle the deck of cards.
