@@ -78,7 +78,7 @@ void displayDeck(array<const string*, DECK_SIZE> deck) {
 	for (int i = 0; i < DECK_SIZE; i++)
 	{
 		//This displays the deck, but does not space it out.
-		cout << *deck[i] << "";
+		cout << *deck[i] << " ";
 	}
 	
 }
