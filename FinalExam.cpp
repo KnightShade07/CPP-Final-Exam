@@ -15,7 +15,8 @@ using namespace std;
 //Instructor: Ken Meerdink
 //Assignment: C++ Final Exam
 //Description: This will be the final test of everything you've learned in C++.
-//this program can display and shuffle a deck of 52 playing cards, noted by a number and letter 
+//This program can display and shuffle a deck of 52 playing cards, noted by a number and letter
+//Github Repository: https://github.com/KnightShade07/CPP-Final-Exam
 
 const int DECK_SIZE = 52;
 const array<string, DECK_SIZE> cards{
@@ -77,13 +78,13 @@ void displayDeck(array<const string*, DECK_SIZE> deck) {
 
 	for (int i = 0; i < DECK_SIZE; i++)
 	{
-		//This displays the deck, but does not account for new lines
+		//This displays the deck, but does not account for new lines.
 		cout << *deck[i] << " ";
 		//Implements proper formatting with endlines.
 		if (i == 12 || i == 25 || i == 38)
 		{
 			//looked at display with just one endl,
-			//decided that 2 endls is actually better to read the cards
+			//decided that 2 endls is actually better to read the cards.
 			cout << endl << endl;
 		}
 		
@@ -105,7 +106,7 @@ void displayDeck(array<const string*, DECK_SIZE> deck) {
 
 */
 void shuffleDeck(array<const string*, DECK_SIZE>* deck) {
-	cout << "The deck has been shuffled! To see your new shuffled deck, press 2 and then enter!:" << endl;
+	cout << "The deck has been shuffled! To see your new shuffled deck, press 2 and then Enter!:" << endl;
 	static default_random_engine randEngine (static_cast<unsigned int>(time(0)));
 	for (unsigned int i = DECK_SIZE - 1; i > 0; i--)
 	{
