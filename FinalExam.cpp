@@ -92,6 +92,5 @@ void displayDeck(array<const string*, DECK_SIZE> deck) {
 }
 
 void shuffleDeck(array<const string*, DECK_SIZE>* deck) {
-	
-	cout << "Shuffle the deck here" << endl;
+	cout << "The deck has been shuffled! Here is what it looks like!:" << endl;
 }
