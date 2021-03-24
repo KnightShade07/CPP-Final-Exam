@@ -90,8 +90,26 @@ void displayDeck(array<const string*, DECK_SIZE> deck) {
 	}
 	
 }
+//This method will shuffle the deck of cards.
+//Note: The shuffling algorithm used here goes as follows,
+//from the PDF:
 
+/*
+	for i = last index downto 1: // inclusive range: [SIZE – 1, 1]
+ let j be a random number in the range [0, i]
+ swap element i with element j
+
+*/
 void shuffleDeck(array<const string*, DECK_SIZE>* deck) {
-	// TO DO: REPLACE THE BODY OF THIS FUNCTION
-	cout << "Shuffle the deck here" << endl;
+	cout << "The deck has been shuffled! To see your new shuffled deck, press 2 and then enter!:" << endl;
+	static default_random_engine randEngine (static_cast<unsigned int>(time(0)));
+	for (unsigned int i = DECK_SIZE - 1; i > 0; i--)
+	{
+		uniform_int_distribution<unsigned int> randInt{0,i};
+		unsigned int j = randInt(randEngine);
+		swap((*deck)[i], (*deck)[j]);
+	}
+	
+
+
 }
