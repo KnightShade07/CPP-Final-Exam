@@ -92,6 +92,6 @@ void displayDeck(array<const string*, DECK_SIZE> deck) {
 }
 
 void shuffleDeck(array<const string*, DECK_SIZE>* deck) {
-	// TO DO: REPLACE THE BODY OF THIS FUNCTION
+	
 	cout << "Shuffle the deck here" << endl;
 }
