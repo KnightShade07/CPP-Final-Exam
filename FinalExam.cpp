@@ -77,8 +77,14 @@ void displayDeck(array<const string*, DECK_SIZE> deck) {
 
 	for (int i = 0; i < DECK_SIZE; i++)
 	{
-		//This displays the deck, but does not space it out.
+		//This displays the deck, but does not account for new lines
 		cout << *deck[i] << " ";
+		//Implements proper formatting with endlines.
+		if (i == 12 || i == 25 || i == 38)
+		{
+			cout << endl << endl;
+		}
+		
 	}
 	
 }
