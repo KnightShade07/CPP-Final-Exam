@@ -84,7 +84,7 @@ void displayDeck(array<const string*, DECK_SIZE> deck) {
 		if (i == 12 || i == 25 || i == 38)
 		{
 			//looked at display with just one endl,
-			//decided that 2 endls is actually better to read the cards
+			//decided that 2 endls is actually better to read the cards.
 			cout << endl << endl;
 		}
 		
