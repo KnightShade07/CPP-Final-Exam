@@ -70,10 +70,17 @@ void printMenu() {
 	cout << "1 - Shuffle deck" << endl;
 	cout << "2 - Display deck" << endl;
 }
-
+//Get this working first.
 void displayDeck(array<const string*, DECK_SIZE> deck) {
-	// TO DO: REPLACE THE BODY OF THIS FUNCTION
-	cout << "Display the deck here" << endl;
+	cout << "Here is your deck of cards! Pick a card, any card! Just kidding!" << endl <<
+	"This is a programming exam, not a magic show!" << endl;
+
+	for (int i = 0; i < DECK_SIZE; i++)
+	{
+		//This displays the deck, but does not space it out.
+		cout << *deck[i] << "";
+	}
+	
 }
 
 void shuffleDeck(array<const string*, DECK_SIZE>* deck) {
