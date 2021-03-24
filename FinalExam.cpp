@@ -15,7 +15,7 @@ using namespace std;
 //Instructor: Ken Meerdink
 //Assignment: C++ Final Exam
 //Description: This will be the final test of everything you've learned in C++.
-//this program can display and shuffle a deck of 52 playing cards, noted by a number and letter
+//This program can display and shuffle a deck of 52 playing cards, noted by a number and letter
 //Github Repository: https://github.com/KnightShade07/CPP-Final-Exam
 
 const int DECK_SIZE = 52;
